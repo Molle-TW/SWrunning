@@ -1,0 +1,289 @@
+
+<h2 class="sr-only">Rome Half Marathon 15-week training plan, July 6 to October 18 2026, targeting 1:38:00</h2>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans)}
+.wrap{padding:1rem 0}
+.hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;padding-bottom:10px;border-bottom:1.5px solid var(--color-border-primary)}
+.hdr-left h1{font-size:18px;font-weight:500;color:var(--color-text-primary);line-height:1.1}
+.hdr-left h1 em{color:#A32D2D;font-style:normal}
+.hdr-left p{font-size:12px;color:var(--color-text-secondary);margin-top:3px}
+.stats{display:flex;gap:8px}
+.stat{background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:6px 10px;text-align:center}
+.stat .v{font-size:15px;font-weight:500;color:var(--color-text-primary);line-height:1}
+.stat .l{font-size:10px;color:var(--color-text-secondary);margin-top:2px;text-transform:uppercase;letter-spacing:0.3px}
+.stat.goal{background:var(--color-background-danger);border-color:var(--color-border-danger)}
+.stat.goal .v,.stat.goal .l{color:var(--color-text-danger)}
+
+.phases{display:flex;gap:3px;margin-bottom:8px}
+.ph{flex:1;padding:3px 6px;border-radius:var(--border-radius-md);font-size:10px;font-weight:500;color:var(--color-text-primary);border:0.5px solid var(--color-border-tertiary);background:var(--color-background-secondary);text-align:center}
+.ph.base{background:var(--color-background-success);color:var(--color-text-success);border-color:var(--color-border-success)}
+.ph.build{background:var(--color-background-info);color:var(--color-text-info);border-color:var(--color-border-info)}
+.ph.peak{background:var(--color-background-warning);color:var(--color-text-warning);border-color:var(--color-border-warning)}
+.ph.taper{background:var(--color-background-danger);color:var(--color-text-danger);border-color:var(--color-border-danger)}
+
+.tbl-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:11px;min-width:660px}
+thead th{background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);padding:5px 4px;font-size:10px;font-weight:500;color:var(--color-text-secondary);text-align:center;white-space:nowrap}
+thead th:nth-child(1){text-align:left;padding-left:6px;width:28px}
+thead th:nth-child(2){text-align:left;width:52px}
+thead th:nth-child(3){width:24px}
+tbody td{border:0.5px solid var(--color-border-tertiary);padding:2px;vertical-align:top}
+tbody tr:hover td{background:var(--color-background-secondary)!important}
+.wk{text-align:center;font-weight:500;font-size:10px;color:var(--color-text-secondary);padding:4px 2px}
+.dt{font-size:9px;color:var(--color-text-tertiary);padding:4px 4px;white-space:nowrap}
+.km{text-align:center;font-weight:500;font-size:10px;color:var(--color-text-primary);padding:4px 2px}
+.cell{padding:2px}
+
+.s{border-radius:5px;padding:3px 5px;min-height:38px;display:flex;flex-direction:column;gap:1px}
+.s .t{font-size:9px;font-weight:500;text-transform:uppercase;letter-spacing:0.2px}
+.s .d{font-size:10px}
+.s .p{font-size:9px;opacity:0.8;font-style:italic}
+
+.easy{background:var(--color-background-success);color:var(--color-text-success)}
+.intv{background:var(--color-background-danger);color:var(--color-text-danger)}
+.tempo{background:var(--color-background-warning);color:var(--color-text-warning)}
+.long{background:var(--color-background-info);color:var(--color-text-info)}
+.str{background:var(--color-background-secondary);color:var(--color-text-secondary)}
+.rest{color:var(--color-text-tertiary);font-size:9px;text-align:center;padding-top:10px}
+.race{background:var(--color-background-danger);color:var(--color-text-danger);border:1.5px solid var(--color-border-danger)}
+
+tr.rec .wk{color:#A32D2D}
+tr.racew td{border-top:1.5px solid #A32D2D!important}
+
+.guide{margin-top:12px;border:0.5px solid var(--color-border-danger);border-radius:var(--border-radius-lg);overflow:hidden}
+.guide-hdr{background:var(--color-background-danger);color:var(--color-text-danger);padding:6px 12px;font-size:11px;font-weight:500;display:flex;align-items:center;gap:6px}
+.guide-body{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;padding:10px}
+.gi{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:8px 10px;border:0.5px solid var(--color-border-tertiary)}
+.gi .gl{font-size:10px;font-weight:500;color:var(--color-text-danger);text-transform:uppercase;letter-spacing:0.3px;margin-bottom:4px}
+.gi .gd{font-size:11px;color:var(--color-text-secondary);line-height:1.45}
+.gi .gd strong{font-weight:500;color:var(--color-text-primary)}
+
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;padding-top:8px;border-top:0.5px solid var(--color-border-tertiary)}
+.li{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--color-text-secondary)}
+.ld{width:12px;height:12px;border-radius:3px}
+</style>
+
+<div class="wrap">
+
+<div class="hdr">
+  <div class="hdr-left">
+    <h1><i class="ti ti-run" aria-hidden="true"></i> Rome Half Marathon — <em>1:38:00</em></h1>
+    <p>15-week plan · Morten Lund · July 6 – October 18, 2026 · 4 runs/week + 2 strength</p>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="v">52 km</div><div class="l">Ultra base</div></div>
+    <div class="stat"><div class="v">1:43</div><div class="l">HM PB</div></div>
+    <div class="stat"><div class="v">1:48</div><div class="l">Current</div></div>
+    <div class="stat goal"><div class="v">1:38</div><div class="l">Target</div></div>
+  </div>
+</div>
+
+<div class="phases">
+  <div class="ph base">Base — wks 1–4</div>
+  <div class="ph build">Build — wks 5–9</div>
+  <div class="ph peak">Peak — wks 10–12</div>
+  <div class="ph taper">Taper — wks 13–15 + Race</div>
+</div>
+
+<div class="tbl-wrap">
+<table>
+<thead>
+<tr>
+  <th>Wk</th><th>Dates</th><th>km</th>
+  <th>Mon 06:00</th><th>Tue</th><th>Wed 06:00</th><th>Thu</th><th>Fri 06:00</th><th>Sat</th><th>Sun</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+  <td class="wk">1</td><td class="dt">Jul 6–12</td><td class="km">38</td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">8 km</span><span class="p">5:30–5:45/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s intv"><span class="t">Intervals</span><span class="d">6 × 800 m</span><span class="p">rec. 400 m jog</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">8 km</span><span class="p">5:30–5:45/km</span></div></td>
+  <td class="cell"><div class="s long"><span class="t">Long run</span><span class="d">14 km</span><span class="p">5:35–5:50/km</span></div></td>
+  <td class="cell"><div class="rest">Rest</div></td>
+</tr>
+
+<tr>
+  <td class="wk">2</td><td class="dt">Jul 13–19</td><td class="km">41</td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">9 km</span><span class="p">5:25–5:40/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s tempo"><span class="t">Tempo</span><span class="d">8 km steady</span><span class="p">4:55–5:05/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">8 km</span><span class="p">5:25–5:40/km</span></div></td>
+  <td class="cell"><div class="s long"><span class="t">Long run</span><span class="d">16 km</span><span class="p">5:30–5:45/km</span></div></td>
+  <td class="cell"><div class="rest">Rest</div></td>
+</tr>
+
+<tr>
+  <td class="wk">3</td><td class="dt">Jul 20–26</td><td class="km">44</td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">9 km</span><span class="p">5:25–5:40/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s intv"><span class="t">Intervals</span><span class="d">8 × 800 m</span><span class="p">4:25–4:35/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s tempo"><span class="t">Threshold</span><span class="d">9 km</span><span class="p">5:00–5:10/km</span></div></td>
+  <td class="cell"><div class="s long"><span class="t">Long run</span><span class="d">18 km</span><span class="p">5:30–5:45/km</span></div></td>
+  <td class="cell"><div class="rest">Rest</div></td>
+</tr>
+
+<tr class="rec">
+  <td class="wk">4 <i class="ti ti-arrow-down" style="font-size:10px;color:#A32D2D" aria-label="recovery week"></i></td><td class="dt">Jul 27–Aug 2</td><td class="km">33</td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">7 km</span><span class="p">5:40–5:55/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s intv"><span class="t">Intervals</span><span class="d">5 × 1000 m</span><span class="p">4:30–4:40/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">7 km</span><span class="p">5:40–5:55/km</span></div></td>
+  <td class="cell"><div class="s long"><span class="t">Long run</span><span class="d">14 km</span><span class="p">5:35–5:50/km</span></div></td>
+  <td class="cell"><div class="rest">Rest</div></td>
+</tr>
+
+<tr>
+  <td class="wk">5</td><td class="dt">Aug 3–9</td><td class="km">47</td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">10 km</span><span class="p">5:20–5:35/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s intv"><span class="t">Intervals</span><span class="d">6 × 1000 m</span><span class="p">4:25–4:35/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s tempo"><span class="t">Tempo</span><span class="d">9 km</span><span class="p">4:55–5:05/km</span></div></td>
+  <td class="cell"><div class="s long"><span class="t">Long run</span><span class="d">18 km</span><span class="p">5:25–5:40/km</span></div></td>
+  <td class="cell"><div class="rest">Rest</div></td>
+</tr>
+
+<tr>
+  <td class="wk">6</td><td class="dt">Aug 10–16</td><td class="km">50</td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">10 km</span><span class="p">5:20–5:35/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s tempo"><span class="t">Tempo</span><span class="d">10 km steady</span><span class="p">4:50–5:00/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">10 km</span><span class="p">5:20–5:35/km</span></div></td>
+  <td class="cell"><div class="s long"><span class="t">Long run</span><span class="d">20 km</span><span class="p">5:20–5:35/km</span></div></td>
+  <td class="cell"><div class="rest">Rest</div></td>
+</tr>
+
+<tr>
+  <td class="wk">7</td><td class="dt">Aug 17–23</td><td class="km">52</td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">10 km</span><span class="p">5:20–5:35/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s intv"><span class="t">Intervals</span><span class="d">5 × 1500 m</span><span class="p">4:22–4:32/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s tempo"><span class="t">Threshold</span><span class="d">10 km</span><span class="p">4:55–5:05/km</span></div></td>
+  <td class="cell"><div class="s long"><span class="t">Long run</span><span class="d">21 km</span><span class="p">5:15–5:30/km</span></div></td>
+  <td class="cell"><div class="rest">Rest</div></td>
+</tr>
+
+<tr>
+  <td class="wk">8</td><td class="dt">Aug 24–30</td><td class="km">53</td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">10 km</span><span class="p">5:20–5:35/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s intv"><span class="t">Intervals</span><span class="d">4 × 2000 m</span><span class="p">4:20–4:30/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s tempo"><span class="t">Tempo</span><span class="d">11 km</span><span class="p">4:50–5:00/km</span></div></td>
+  <td class="cell"><div class="s long"><span class="t">Long run</span><span class="d">22 km</span><span class="p">5:15–5:30/km</span></div></td>
+  <td class="cell"><div class="rest">Rest</div></td>
+</tr>
+
+<tr class="rec">
+  <td class="wk">9 <i class="ti ti-arrow-down" style="font-size:10px;color:#A32D2D" aria-label="recovery week"></i></td><td class="dt">Aug 31–Sep 6</td><td class="km">38</td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">8 km</span><span class="p">5:30–5:45/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s intv"><span class="t">Intervals</span><span class="d">6 × 800 m</span><span class="p">4:20–4:30/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">8 km</span><span class="p">5:30–5:45/km</span></div></td>
+  <td class="cell"><div class="s long"><span class="t">Long run</span><span class="d">16 km</span><span class="p">5:25–5:40/km</span></div></td>
+  <td class="cell"><div class="rest">Rest</div></td>
+</tr>
+
+<tr>
+  <td class="wk">10</td><td class="dt">Sep 7–13</td><td class="km">52</td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">10 km</span><span class="p">5:20–5:35/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s intv"><span class="t">Race-pace</span><span class="d">5 × 2000 m</span><span class="p">4:35–4:45/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s tempo"><span class="t">Tempo</span><span class="d">10 km</span><span class="p">4:45–4:55/km</span></div></td>
+  <td class="cell"><div class="s long"><span class="t">Long run</span><span class="d">22 km</span><span class="p">5:15–5:30/km</span></div></td>
+  <td class="cell"><div class="rest">Rest</div></td>
+</tr>
+
+<tr>
+  <td class="wk">11</td><td class="dt">Sep 14–20</td><td class="km">53</td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">10 km</span><span class="p">5:20–5:35/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s intv"><span class="t">Race-pace</span><span class="d">3 × 3000 m</span><span class="p">4:38–4:42/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s tempo"><span class="t">Threshold</span><span class="d">10 km</span><span class="p">4:45–4:55/km</span></div></td>
+  <td class="cell"><div class="s long"><span class="t">Long run</span><span class="d">23 km</span><span class="p">5:15–5:25/km</span></div></td>
+  <td class="cell"><div class="rest">Rest</div></td>
+</tr>
+
+<tr>
+  <td class="wk">12</td><td class="dt">Sep 21–27</td><td class="km">50</td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">10 km</span><span class="p">5:20–5:35/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s intv"><span class="t">Race-pace</span><span class="d">2 × 5000 m</span><span class="p">4:38–4:42/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">9 km</span><span class="p">5:20–5:35/km</span></div></td>
+  <td class="cell"><div class="s long"><span class="t">Long run</span><span class="d">21 km</span><span class="p">5:15–5:25/km</span></div></td>
+  <td class="cell"><div class="rest">Rest</div></td>
+</tr>
+
+<tr>
+  <td class="wk">13</td><td class="dt">Sep 28–Oct 4</td><td class="km">42</td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">8 km</span><span class="p">5:25–5:40/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s intv"><span class="t">Sharpener</span><span class="d">4 × 1000 m</span><span class="p">4:30–4:38/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">8 km</span><span class="p">5:25–5:40/km</span></div></td>
+  <td class="cell"><div class="s long"><span class="t">Long run</span><span class="d">18 km</span><span class="p">5:20–5:35/km</span></div></td>
+  <td class="cell"><div class="rest">Rest</div></td>
+</tr>
+
+<tr>
+  <td class="wk">14</td><td class="dt">Oct 5–11</td><td class="km">32</td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">7 km</span><span class="p">5:30–5:45/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s intv"><span class="t">Sharpener</span><span class="d">3 × 1000 m</span><span class="p">4:38–4:42/km</span></div></td>
+  <td class="cell"><div class="s str"><span class="t"><i class="ti ti-barbell" aria-hidden="true"></i> Strength</span></div></td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">6 km</span><span class="p">5:30–5:45/km</span></div></td>
+  <td class="cell"><div class="s long"><span class="t">Long w/pace</span><span class="d">14 km + 5 km @ race</span><span class="p">4:38–4:42/km</span></div></td>
+  <td class="cell"><div class="rest">Rest</div></td>
+</tr>
+
+<tr class="racew">
+  <td class="wk" style="color:#A32D2D;font-weight:500">15</td><td class="dt">Oct 12–18</td><td class="km"><i class="ti ti-flag" aria-hidden="true" style="color:#A32D2D"></i></td>
+  <td class="cell"><div class="s easy"><span class="t">Easy</span><span class="d">5 km</span><span class="p">5:40–5:55/km</span></div></td>
+  <td class="cell"><div class="rest">Rest</div></td>
+  <td class="cell"><div class="s intv"><span class="t">Activation</span><span class="d">3 × 1 km</span><span class="p">4:38–4:42/km</span></div></td>
+  <td class="cell"><div class="rest">Rest</div></td>
+  <td class="cell"><div class="s easy"><span class="t">Shake-out</span><span class="d">4 km easy</span><span class="p">5:45/km</span></div></td>
+  <td class="cell"><div class="rest">Prep + rest</div></td>
+  <td class="cell"><div class="s race"><span class="t"><i class="ti ti-trophy" aria-hidden="true"></i> Race day</span><span class="d">Rome HM</span><span class="p">Goal: 1:38:00</span></div></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<div class="guide">
+  <div class="guide-hdr"><i class="ti ti-bolt" aria-hidden="true"></i> How to run the interval sessions</div>
+  <div class="guide-body">
+    <div class="gi"><div class="gl">Warm-up</div><div class="gd"><strong>10–15 min easy jog</strong> + 4–6 strides (80 m accelerations). Never skip — it's injury prevention.</div></div>
+    <div class="gi"><div class="gl">The reps</div><div class="gd">Run each rep at the listed pace — <strong>controlled hard</strong>, not sprinting. Last rep should feel like the first.</div></div>
+    <div class="gi"><div class="gl">Recovery (rec.)</div><div class="gd"><strong>Slow jog</strong> between reps, never stop dead. 800 m reps: ~90 sec jog. 1–2 km reps: ~4–5 min jog.</div></div>
+    <div class="gi"><div class="gl">Cool-down</div><div class="gd"><strong>10 min easy jog</strong> after the last rep + 5 min light stretching. Helps clear lactate and speeds recovery.</div></div>
+    <div class="gi"><div class="gl">Feel test</div><div class="gd">Rate <strong>7–8 out of 10</strong> effort. If the last rep is easy, go slightly faster next time. If you blow up, slow down.</div></div>
+  </div>
+</div>
+
+<div class="legend">
+  <div class="li"><div class="ld" style="background:var(--color-background-success);border:0.5px solid var(--color-border-success)"></div> Easy run</div>
+  <div class="li"><div class="ld" style="background:var(--color-background-danger);border:0.5px solid var(--color-border-danger)"></div> Intervals / Race-pace</div>
+  <div class="li"><div class="ld" style="background:var(--color-background-warning);border:0.5px solid var(--color-border-warning)"></div> Tempo / Threshold</div>
+  <div class="li"><div class="ld" style="background:var(--color-background-info);border:0.5px solid var(--color-border-info)"></div> Long run</div>
+  <div class="li"><div class="ld" style="background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary)"></div> Strength</div>
+  <div class="li" style="color:#A32D2D"><i class="ti ti-arrow-down" style="font-size:12px"></i> Recovery week</div>
+</div>
+
+</div>
